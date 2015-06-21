@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p>Hi, create a vehicle:</p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" />
+    <label for="type">Type:</label>
+    <select name="type" id="type">
+      <option value="car">Car</option>
+      <option value="motorcycle">Motorcycle</option>
+    </select>
+    <input type="button" name="add" id="add" value="Add" onClick="SC.UI.addVehicle(document.getElementById('name').value, document.getElementById('type').value)"/>
+
+    <ul id="vehicles-list">
+      
+    </ul>
+
+    <script src="classes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

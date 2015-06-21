@@ -18,6 +18,12 @@
       node.appendChild(textNode);  
       node.appendChild(buttonNode);  
 
+      // Attach info function to info button
+      var handler = function(e) {
+        vehicle.info();
+      };
+      window.attach(buttonNode, 'click', handler);
+
       document.getElementById('vehicles-list').appendChild(node);
     }
   };

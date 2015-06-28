@@ -22,9 +22,13 @@
 
   var Instances = {
     Car: function(name, seats, wheels) {
+      seats = seats || 4;
+      wheels = wheels || 4;
       Abstract.Vehicle.call(this, name, seats, wheels);
     },
     Motorcycle: function(name, seats, wheels) {
+      seats = seats || 1;
+      wheels = wheels || 2;
       Abstract.Vehicle.call(this, name, seats, wheels);
     }
   };
